@@ -1,0 +1,1123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face{
+	font-family: 'Sugo Display Pro';
+	src: url("../fonts/Sugo-Pro-Display-Regular-trial.ttf") format('truetype');
+}
+
+@font-face{
+	font-family: 'Sugo Display Pro Bold';
+	src: url("../fonts/Sugo-Pro-Display-Bold-trial.ttf") format('truetype');
+}
+
+@font-face{
+	font-family: 'Sugo Display Pro Light';
+	src: url("../fonts/Sugo-Pro-Display-Light-trial.ttf") format('truetype');
+}
+
+body{
+	font-family: 'Poppins';
+	font-size: 32px;
+	color: #3E0081;
+}
+
+/* =========================
+   HEADER - BAGHAVEN
+========================= */
+
+header{
+	color: #3E0081;
+	background-color: #E1E7FF;
+	box-shadow: 0px 4px 4px 0px rgba(118,132,255,0.50);
+	position: fixed;
+	padding: 20px 0;
+	font-family: 'Poppins';
+	font-weight: 700;
+	width: 100%;
+	z-index: 3;
+}
+
+header .navbar-brand{
+	width: 250px;
+	margin: auto;
+}
+
+header .nav-iconos{
+	font-size: 25px;
+}
+
+/* =========================
+   HERO - BAGHAVEN
+========================= */
+
+#hero {
+    width: 100%;
+    min-height: 325px;
+    background-color: #FFE477;
+    overflow: hidden;
+}
+
+
+/* IMAGEN */
+
+#hero .hero-image {
+    width: 100%;
+    text-align: center;
+    transform: translateY(-35px);
+}
+
+#hero .hero-image img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+}
+
+
+/* CONTENIDO */
+
+#hero .hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+#hero .hero-content h1 {
+    font-family: 'Sugo Display Pro', sans-serif;
+    font-size: 90px;
+    font-weight: normal;
+    color: #3E0081;
+    margin: 0 0 2px;
+    line-height: 1;
+}
+
+#hero .hero-content p {
+    font-family: 'Sugo Display Pro Light', sans-serif;
+    font-size: 50px;
+    color: #3E0081;
+    margin: 0 0 18px;
+    line-height: 1;
+}
+
+
+/* BOTÓN */
+
+#hero .hero-button {
+    display: inline-block;
+    background-color: #7568F5;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 6px 60px;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+#hero .hero-button:hover {
+    background-color: #3E0081;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    #hero .hero-image {
+        transform: translateY(-20px);
+    }
+
+    #hero .hero-content {
+        padding: 10px 20px 35px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 65px;
+    }
+
+    #hero .hero-content p {
+        font-size: 38px;
+    }
+
+    #hero .hero-button {
+        font-size: 20px;
+        padding: 7px 45px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #hero {
+        padding: 20px 0 30px;
+    }
+
+    #hero .hero-image {
+        transform: none;
+    }
+
+    #hero .hero-content {
+        padding: 10px 15px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 45px;
+    }
+
+    #hero .hero-content p {
+        font-size: 30px;
+    }
+
+    #hero .hero-button {
+        font-size: 17px;
+        padding: 8px 35px;
+    }
+
+}
+/* =========================
+   NUESTROS BOLSOS Y MOCHILAS - BAGHAVEN
+========================= */
+
+#productos-bolsos {
+    padding: 0 0 50px 0;
+}
+
+
+/* TÍTULO */
+
+#productos-bolsos .titulo-bolsos {
+    padding: 40px 0 35px 0;
+}
+
+#productos-bolsos .titulo-bolsos h1 {
+    font-family: 'Sugo Display Pro', sans-serif;
+    color: #3E0081;
+    font-size: 55px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* TARJETAS */
+
+#productos-bolsos .tarjeta-bolso {
+    position: relative;
+    width: 100%;
+    height: 523px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* IMAGEN */
+
+#productos-bolsos .imagen-bolso {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* DEGRADADO SOBRE LA IMAGEN */
+
+#productos-bolsos .capa-bolso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(62, 0, 129, 0.00) 15%,
+        rgba(62, 0, 129, 0.15) 40%,
+        rgba(62, 0, 129, 0.65) 100%
+    );
+}
+
+
+/* CONTENIDO SOBRE LA IMAGEN */
+
+#productos-bolsos .contenido-bolso {
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/* NOMBRE DEL PRODUCTO */
+
+#productos-bolsos .contenido-bolso h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.45;
+    margin: 0 0 18px 0;
+}
+
+
+/* BOTÓN DESCUBRIR */
+
+#productos-bolsos .boton-descubrir {
+    display: inline-block;
+    background-color: #ffe15c;
+    color: #3E0081;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 12px 56px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+#productos-bolsos .boton-descubrir:hover {
+    background-color: #ffffff;
+    color: #3E0081;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    #productos-bolsos {
+        padding: 0 20px 35px 20px;
+    }
+
+    #productos-bolsos .titulo-bolsos {
+        padding: 30px 0 25px 0;
+    }
+
+    #productos-bolsos .titulo-bolsos h1 {
+        font-size: 30px;
+    }
+
+    #productos-bolsos .tarjeta-bolso {
+        height: 480px;
+    }
+
+    #productos-bolsos .contenido-bolso h2 {
+        font-size: 32px;
+    }
+
+    #productos-bolsos .boton-descubrir {
+        font-size: 17px;
+        padding: 11px 45px;
+    }
+
+}
+
+/* =========================
+   BOLSOS POPULARES - BAGHAVEN
+========================= */
+
+#bolsos-populares {
+	background-color: #ffffff;
+	padding: 70px 0 90px;
+}
+
+#bolsos-populares .titulo-bolsos-populares {
+	font-family: 'Sugo Display Pro', sans-serif;
+	font-size: 55px;
+	font-weight: normal;
+	color: #3E0081;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#bolsos-populares .producto {
+	height: 310px;
+	background-color: #ffffff;
+	border: 2px solid #7684FF;
+	border-radius: 20px;
+	padding: 15px 20px 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px 0px rgba(118,132,255,0.50);
+}
+
+#bolsos-populares .favorito-bolso {
+	height: 50px;
+	text-align: right;
+}
+
+#bolsos-populares .icono-corazon {
+	font-size: 28px;
+	color: #FFE476;
+}
+
+#bolsos-populares .icono-corazon:hover {
+	color: #7684FF;
+}
+
+#bolsos-populares .contenedor-imagen-bolso {
+	height: 155px;
+	text-align: center;
+}
+
+#bolsos-populares .imagen-bolso {
+	max-width: 100%;
+	max-height: 155px;
+}
+
+#bolsos-populares .informacion-bolso {
+	text-align: left;
+}
+
+#bolsos-populares .marca-bolso {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color: #3E0081;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+#bolsos-populares .nombre-bolso {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #3E0081;
+	margin-top: 0;
+	margin-bottom: 3px;
+}
+
+#bolsos-populares .precio-bolso {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color: #3E0081;
+	margin: 0;
+}
+/* =========================
+   DESCUBRIR - BAGHAVEN
+========================= */
+
+#descubrir .contenedor-titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#descubrir .btn-primary {
+	font-family: 'Poppins', sans-serif;
+    background-color: #7684FF;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 12px 48px;
+    border-radius: 500px;
+    display: inline-block;
+	border: solid #FFFFFF 3px;
+}
+
+#descubrir .btn-primary:hover{
+	background-color: #FFFFFF;
+	border: solid #7684FF 3px;
+	color: #7684FF;
+}
+
+#descubrir i{
+	color: #FFE476;
+	height: 80px;
+	height: auto;
+}
+
+#descubrir .contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#descubrir .tarjeta-caracteristica {
+    flex: 1;
+    min-width: 200px;
+    max-width: 220px;
+    text-align: center;
+    padding: 10px;
+}
+
+#descubrir .icono-caracteristica {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#descubrir .titulo-caracteristica {
+    font-family: 'Sugo Display Pro', sans-serif;
+    font-size: 32px;
+    color: #3E0081;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: normal; 
+}
+
+#descubrir .texto-caracteristica {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #3E0081;
+    margin: 0;
+}
+
+/* =========================
+   DESCUBRIR - BAGHAVEN
+========================= */
+
+#descubrir{
+	padding-bottom: 100px;
+}
+
+#descubrir .contenedor-titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#descubrir .btn-primary {
+	font-family: 'Poppins', sans-serif;
+    background-color: #7684FF;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 12px 48px;
+    border-radius: 500px;
+    display: inline-block;
+	border: solid #FFFFFF 3px;
+}
+
+#descubrir .btn-primary:hover{
+	background-color: #FFFFFF;
+	border: solid #7684FF 3px;
+	color: #7684FF;
+}
+
+#descubrir i{
+	color: #FFE476;
+	height: 80px;
+	height: auto;
+}
+
+#descubrir .contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#descubrir .tarjeta-caracteristica {
+    flex: 1;
+    min-width: 200px;
+    max-width: 220px;
+    text-align: center;
+    padding: 10px;
+}
+
+#descubrir .icono-caracteristica {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#descubrir .titulo-caracteristica {
+    font-family: 'Sugo Display Pro', sans-serif;
+    font-size: 32px;
+    color: #3E0081;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: normal; 
+}
+
+#descubrir .texto-caracteristica {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #3E0081;
+    margin: 0;
+}
+
+.iconos-index{
+	font-size: 90px;
+	padding: 60px 0;
+}
+
+/* =========================
+   FOOTER - BAGHAVEN
+========================= */
+
+footer{
+	background-color: #3E0081;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	color: #E1E7FF;
+	font-family: 'Poppins';
+	font-size: 14px;
+	margin: auto;
+}
+
+footer h2{
+	font-family: 'Poppins';
+	font-weight: 700;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+footer img{
+	width: 150px;
+}
+
+footer h3{
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding: 5px 0;
+}
+
+footer ul{
+	padding-left: 5px;
+}
+
+footer h4{
+	font-family: 'Poppins';
+	padding: 30px 0;
+	font-size: 14px;
+}
+
+
+/* =========================
+   CARRITO - BAGHAVEN
+========================= */
+
+.titulo-pagina{
+	padding-left: 5%;
+	font-weight: 600;
+}
+
+.espacio{
+	padding: 60px 0;
+}
+
+#carrito h2{
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.forma-pago{
+	margin: auto;
+	font-size: 18px;
+	padding: 20px 2%;
+	border: solid 1px #7684FF;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px 0px rgba(118,132,255,0.50);
+}
+
+.tarjetas{
+	margin-left: 10%;
+}
+
+.btn-carrito{
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	color: #FFFFFF;
+	background-color: #7684FF;
+	border-radius: 17px;
+}
+
+.linea-horizontal{
+	background-color: #7684FF;
+	height: 1px;
+	width: 100%;
+	margin:auto; 
+}
+
+.btn-carrito{
+	background-color: #7684ff;
+	color: #FFFFFF;
+}
+
+.btn-carrito:hover{
+	background-color: #FFE476;
+}
+
+.fa-credit-card{
+	font-size: 25px;
+	text-align: center;
+}
+
+.padding-texto{
+	padding-top: 10px;
+}
+
+.precio-align{
+	text-align: right;
+	margin-left: 80px 0;
+}
+
+.totales{
+	padding-top: 50px;	
+}
+
+.totales h4{
+	padding: 3px 0;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.cart-title {
+  color: #3E0081;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 24px;
+  
+}
+
+.cart-card {
+  width: 100%;
+  max-width: 480px;
+  border: 1.5px solid #7684FF;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  min-height: 120px;
+  box-sizing: border-box;
+box-shadow: 0px 4px 4px 0px rgba(118,132,255,0.50);
+}
+
+.img-container {
+  width: 95px;
+  height: 95px;
+  border: 1.5px solid #3E0081;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  
+}
+
+.brand-name {
+  color:#3E0081;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.product-desc {
+  color:#3E0081;
+  font-size: 0.82rem;
+}
+
+.quantity-control {
+  background-color: #E1E7FF;
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+.btn-qty {
+  background: transparent;
+  border: none;
+  color: #3E0081;
+  font-weight: 250;
+  padding: 2px 6px;
+  
+}
+
+.qty-value {
+  padding: 0 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3E0081;
+}
+
+.cart-card > .text-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  min-width: 60px;
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-delete img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.product-price {
+  color: #3E0081;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* =========================================
+   CATÁLOGO - BAGHAVEN
+========================================= */
+
+.catalogo {
+    padding-top: 135px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+    color: #3E0081;
+}
+
+
+/* =========================================
+   FILTROS
+========================================= */
+
+.filtros {
+    border: 1px solid #b7b7d8;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.filtros h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+    padding: 18px 20px;
+    border-bottom: 1px solid #b7b7d8;
+}
+
+.filtro-seccion {
+    padding: 15px 20px;
+    border-bottom: 1px solid #b7b7d8;
+}
+
+.filtro-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtro-titulo h3,
+.filtro-seccion h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.filtro-titulo i {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.filtro-opciones label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+input {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    accent-color: #FFE476;
+    vertical-align: middle;
+}
+
+.precio {
+    border-bottom: none;
+}
+
+.rango-precio {
+    width: 100%;
+    accent-color: #3E0081;
+    margin-bottom: 8px;
+}
+
+.precios {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   ENCABEZADO DEL CATÁLOGO
+========================================= */
+
+.catalogo-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.catalogo-encabezado h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #3E0081;
+}
+
+.catalogo-encabezado p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0 0 5px;
+    color: #3E0081;
+}
+
+.cantidad-productos {
+    display: block;
+    margin-top: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: #3E0081;
+}
+
+/* =========================================
+   ORDENAR
+========================================= */
+
+.ordenar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c7c7dd;
+    border-radius: 12px;
+    padding: 8px 12px;
+    min-width: 260px;
+}
+
+.ordenar label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.ordenar select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #3E0081;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.productos-catalogo {
+    margin-top: 0;
+}
+
+.producto-card {
+    position: relative;
+    width: 100%;
+    min-height: 195px;
+    border: 1.5px solid #7684FF;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 12px 15px 12px;
+    box-shadow: 0px 3px 4px rgba(118, 132, 255, 0.35);
+    transition: 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 8px rgba(118, 132, 255, 0.45);
+}
+
+
+/* =========================================
+   CORAZÓN
+========================================= */
+
+.favorito {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    z-index: 2;
+}
+
+.favorito i {
+    color: #FFE476;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.favorito i:hover {
+    color: #7684FF;
+}
+
+
+/* =========================================
+   IMAGEN DEL PRODUCTO
+========================================= */
+
+.producto-imagen {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.producto-imagen img {
+    width: 240px;
+    height: 115px;
+    object-fit: contain;
+}
+
+/* Ajustes individuales de tamaño de imágenes */
+
+.productos-catalogo article:nth-child(1) .producto-imagen img {
+    transform: scale(1.18);
+}
+
+.productos-catalogo article:nth-child(2) .producto-imagen img {
+    transform: scale(0.90);
+}
+
+.productos-catalogo article:nth-child(3) .producto-imagen img {
+    transform: scale(1.20);
+}
+
+.productos-catalogo article:nth-child(4) .producto-imagen img {
+    transform: scale(1.20);
+}
+
+.productos-catalogo article:nth-child(6) .producto-imagen img {
+    transform: scale(0.90);
+}
+
+.productos-catalogo article:nth-child(7) .producto-imagen img {
+    transform: scale(0.90);
+}
+.productos-catalogo article:nth-child(8) .producto-imagen img {
+    transform: scale(1.18);
+}
+/* =========================================
+   INFORMACIÓN DEL PRODUCTO
+========================================= */
+
+.producto-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #3E0081;
+    margin: 0 0 3px;
+}
+
+.producto-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #3E0081;
+    margin: 0 0 4px;
+    line-height: 1.3;
+}
+
+.producto-info strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3E0081;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .catalogo {
+        padding-top: 120px;
+    }
+
+    .catalogo-encabezado {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ordenar {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .catalogo {
+        padding-top: 110px;
+    }
+
+    .filtros {
+        margin-bottom: 25px;
+    }
+
+    .catalogo-encabezado h1 {
+        font-size: 28px;
+    }
+
+    .catalogo-encabezado p {
+        font-size: 13px;
+    }
+
+    .ordenar {
+        max-width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

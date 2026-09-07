@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Catalogo - BagHaven</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="css/bootstrap-custom.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+	
+<body>
+	<header>
+		<div class="container">
+		
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/Logo-header-BagHaven.svg" alt="BagHaven-logo" class="img-fluid">
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="catalogo.html">Catalogo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Promociones</a>
+						</li>
+					
+					</ul>
+					<ul class="navbar-nav ms-auto nav-iconos">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-solid fa-heart"></i></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link active" href="carrito.html"><i class="fa-solid fa-bag-shopping"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+		
+	</header>	
+	
+	<main class="catalogo">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- =========================
+                 FILTROS
+            ========================== -->
+
+            <article class="col-lg-2 col-md-3 col-12">
+                <aside class="filtros">
+
+                    <h2>Filtros</h2>
+
+                    <!-- CATEGORÍA -->
+                    <div class="filtro-seccion">
+                        <div class="filtro-titulo">
+                            <h3>Categoria</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <div class="filtro-opciones">
+
+                            <label>
+                                <input type="checkbox" checked>
+                                <span>Todos</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Shoulder Bag</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Tote Bags</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Crossbody Bags</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Clutch</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Wallets</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <!-- MARCA -->
+                    <div class="filtro-seccion">
+
+                        <div class="filtro-titulo">
+                            <h3>Marca</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <div class="filtro-opciones">
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Coach</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Chanel</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>YSL</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Jacquemus</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Furla</span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRECIO -->
+                    <div class="filtro-seccion precio">
+
+                        <h3>Rango de precio</h3>
+
+                        <input type="range"
+                               min="500"
+                               max="1000000"
+                               value="1000000"
+                               class="rango-precio">
+
+                        <div class="precios">
+                            <span>L 500</span>
+                            <span>L 1,000,000</span>
+                        </div>
+
+                    </div>
+
+                </aside>
+            </article>
+
+
+            <!-- =========================
+                 CONTENIDO DEL CATÁLOGO
+            ========================== -->
+
+            <article class="col-lg-10 col-md-9 col-12">
+
+
+                <!-- ENCABEZADO DEL CATÁLOGO -->
+                <div class="catalogo-encabezado">
+
+                    <div>
+                        <h1>Catálogo</h1>
+
+                        <p>
+                            Explora nuestra colección de bolsos y carteras
+                        </p>
+
+                        <span class="cantidad-productos">
+                            Mostrando 1-12 de 48 productos
+                        </span>
+                    </div>
+
+                    <!-- ORDENAR -->
+                    <div class="ordenar">
+
+                        <label for="ordenar">Ordenar por:</label>
+
+                        <select id="ordenar">
+                            <option>Más Recientes</option>
+                            <option>Precio: menor a mayor</option>
+                            <option>Precio: mayor a menor</option>
+                            <option>Nombre A-Z</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     PRODUCTOS
+                ========================== -->
+
+                <div class="row productos-catalogo g-4">
+
+                    <!-- PRODUCTO 1 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/jacquemus-bambino.jpg"
+                                     alt="Jacquemus The Bambino shoulder bag"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>JACQUEMUS</h2>
+                                <p>The Bambino shoulder bag</p>
+                                <strong>$733</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 2 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/jacquemus-clutch.jpg"
+                                     alt="Jacquemus Rond Carré clutch bag"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>JACQUEMUS</h2>
+                                <p>Rond Carré clutch bag</p>
+                                <strong>$922</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 3 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/saint-laurent-mini.jpg"
+                                     alt="Saint Laurent Jamie quilted mini bag"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>Saint Laurent</h2>
+                                <p>Jamie 4.3 quilted mini bag</p>
+                                <strong>$2,879</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 4 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/Chanel-preowned.jpg"
+                                     alt="Chanel Small quilted crossbody bag"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>CHANEL Pre-Owned</h2>
+                                <p>Small quilted crossbody bag</p>
+                                <strong>$9,920</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 5 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/bolso-coach.png"
+                                     alt="Coach Tabby cross body bag"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>Coach</h2>
+                                <p>Tabby cross body bag</p>
+                                <strong>$350</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 6 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/bolso-coach-20.png"
+                                     alt="Coach Tabby shoulder bag 20"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>Coach</h2>
+                                <p>Tabby shoulder bag 20</p>
+                                <strong>$453</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 7 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/bolso-furla-mini.png"
+                                     alt="Furla 1927 crossbody mini"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>Furla</h2>
+                                <p>1927 crossbody mini</p>
+                                <strong>$186</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCTO 8 -->
+                    <article class="col-xl-3 col-lg-4 col-md-6 col-12">
+
+                        <div class="producto-card">
+
+                            <div class="favorito">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="producto-imagen">
+                                <img src="img/catalogo/furla-tonie.jpg"
+                                     alt="Furla small Tonie textured bag"
+                                     class="img-fluid">
+                            </div>
+
+                            <div class="producto-info">
+                                <h2>Furla</h2>
+                                <p>Small Tonie textured bag</p>
+                                <strong>$274</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+
+</main>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<article class="col-lg-4 col-sm-4 col-12">
+				
+					<h2>Contacto</h2>
+					<h3>Correo electrónico: <br>contacto@baghaven.com</h3>
+					<h3>Teléfono : 9999999</h3>
+					
+					<img src="img/redes-iconos.png" alt="Redes-sociales">
+					
+					
+				</article>
+				
+				<article class="col-lg-4 col-sm-4 col-12">
+				
+					<h2>Más información</h2>
+					<ul>
+						<li>Preguntas frecuentes</li>
+						<li>Envío y entrega</li>
+						<li>Seguimiento de mi pedido</li>
+					</ul>
+					
+				</article>
+				
+				<article class="col-lg-4 col-sm-4 col-12">
+				
+					<h2>Información legal</h2>
+					<h3>Terminos y condiciones</h3>
+					<h2>Acerca de</h2>
+					<ul>
+						<li>¿Quiénes somos?</li>
+						<li>Tarjeta de regalo electrónica</li>
+					</ul>
+					
+				</article>
+			</div>
+			
+			<h4>© 2026 BagHaven</h4>
+			
+		</div>
+	</footer>
+</body>
+</html>
